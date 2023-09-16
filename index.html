@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CPSC 349 Calculator</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <h1 class="title">Calculator</h1>
+            <h3 class="subtitle">James Cadavona</h3>
+        </nav>
+    </header>
+    <section>
+        <div class="calculator__container">
+            <div class="calculator__skel">
+                <div class="calculator__display">
+                    <input type="text" id="calculation" readonly>
+                </div>
+                <div class="row__container">
+                    <div class="row__1">
+                        <button class="number__btn" onclick="inputDisplay('9')">9</button>
+                        <button class="number__btn" onclick="inputDisplay('6')">6</button>
+                        <button class="number__btn" onclick="inputDisplay('1')">1</button>
+                        <button onclick="calcDisplay()">=</button>
+                    </div>
+                    <div class="row__2">
+                        <button class="number__btn" onclick="inputDisplay('8')">8</button>
+                        <button class="number__btn" onclick="inputDisplay('5')">5</button>
+                        <button class="number__btn" onclick="inputDisplay('2')">2</button>
+                        <button class="number__btn" onclick="inputDisplay('0')">0</button>
+                    </div>
+                    <div class="row__3">
+                        <button class="number__btn" onclick="inputDisplay('7')">7</button>
+                        <button class="number__btn" onclick="inputDisplay('4')">4</button>
+                        <button class="number__btn" onclick="inputDisplay('3')">3</button>
+                        <button onclick="inputDisplay('x')">x</button>
+                    </div>
+                    <div class="row__4">
+                        <button class="clear__btn" onclick="clearDisplay()">C</button>
+                        <button onclick="inputDisplay('+')">+</button>
+                        <button onclick="inputDisplay('-')">-</button>
+                        <button onclick="inputDisplay('/')">/</button>
+                    </div>
+                </div>
+                
+
+            </div>
+        </div>
+    </section>
+</body>
+</html>
